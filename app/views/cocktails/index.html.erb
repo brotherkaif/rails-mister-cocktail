@@ -1,2 +1,6 @@
 <h1>Cocktails</h1>
-<p>some content here</p>
+<ul>
+  <% @cocktails.each do |cocktail|  %>
+    <li><%= cocktail.name %></li>
+  <% end  %>
+</ul>
