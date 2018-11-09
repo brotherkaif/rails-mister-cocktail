@@ -5,5 +5,5 @@
   <li><%= dose.description %> of <%= dose.ingredient.name %></li>
 <% end %>
 </ul>
-
+<%= link_to "add an ingredient", new_cocktail_dose_path(@cocktail) %>
 <%= link_to "back to listing", cocktails_path %>
