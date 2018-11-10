@@ -1,18 +1,42 @@
+/* Colourscheme */
+$navbar-background: white;
+$navbar-title: black;
+$navbar-text: #616668;
+$navbar-accent: #da552f;
+
+
 /* Main navbar */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: white;
+  background: $navbar-background;
   transition: all 0.3s ease;
-  height: 70px;
-  padding: 0px 30px;
+  height: 72px;
+  padding: 0px 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  a {
+    color: $navbar-text;
+  }
+  a:hover {
+    color: $navbar-accent;
+    text-decoration: none;
+  }
 }
 
 /* Logo */
-.navbar-wagon-brand img {
-  height: 50px;
+.navbar-wagon-brand h1 {
+  margin-top: 8px;
+  color: $navbar-accent;
+  small {
+    color: $navbar-title;
+  }
+}
+
+.navbar-wagon-brand h1:hover {
+  small {
+    color: $navbar-accent;
+  }
 }
 
 /* User Avatar */
@@ -36,16 +60,17 @@
 }
 
 /* Navbar link */
-.navbar-wagon-link {
-  color: #616668;
+.navbar-wagon-text {
+  color: $navbar-text;
   font-size: 14px;
 }
-.navbar-wagon-link:hover {
-  color: #da552f;
+.navbar-wagon-text:hover {
+  color: $navbar-accent;
   text-decoration: none;
 }
 
 /* Dropdown menu */
+/*
 .navbar-wagon-dropdown-menu {
   margin-top: 15px;
   box-shadow: 1px 1px 4px #E6E6E6;
@@ -70,8 +95,9 @@
   position: absolute;
   right: 10px;
   top: -6px;
-  background-color: white;
+  background-color: $navbar-background;
   transform: rotate(45deg);
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+*/
