@@ -1,1 +1,6 @@
-<h1>Add a dose</h1>
+<h1>Add an ingredient to <%= @cocktail.name %></h1>
+<%= simple_form_for @dose, url: cocktail_doses_path do |f| %>
+  <%= f.input :description %>
+  <%= f.association :ingredient %>
+  <%= f.button :submit %>
+<% end %>
